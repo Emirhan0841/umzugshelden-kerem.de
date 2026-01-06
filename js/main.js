@@ -83,7 +83,7 @@ ${details || "-"}
 Viele Grüße
 ${name || ""}`.trim();
 
-  const mailto = `mailto:info@umzugshelden.de?subject=${enc(subject)}&body=${enc(body)}`;
+  const mailto = `mailto:info@umzugshelden-kerem.de?subject=${enc(subject)}&body=${enc(body)}`;
 
   msg.classList.remove("hidden");
   msg.innerHTML = `
