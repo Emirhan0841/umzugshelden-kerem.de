@@ -1,0 +1,81 @@
+:root {
+  --font-body: "DM Sans", "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --ink: #0b0b0d;
+  --paper: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(0, 0, 0, 0.06), transparent 60%),
+    radial-gradient(900px 480px at 85% 0%, rgba(0, 0, 0, 0.04), transparent 55%),
+    linear-gradient(180deg, #f6f4ef 0%, #ffffff 40%, #f4f2ed 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.fade-up {
+  animation: fadeUp 0.6s ease-out both;
+}
+
+.stagger > * {
+  animation: fadeUp 0.6s ease-out both;
+}
+
+.stagger > *:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.stagger > *:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.stagger > *:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up,
+  .stagger > * {
+    animation: none;
+  }
+}

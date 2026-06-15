@@ -1,0 +1,1107 @@
+
+<div class="page-shell text-ink" (click)="handleAnchorClick($event)">
+  <!-- Top bar -->
+  <div class="border-b border-line">
+    <div class="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap items-center justify-between gap-3 text-sm text-ink/80">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            Verfuegbar fuer Umzuege &amp; Transporte
+          </span>
+          <span class="hidden sm:inline text-ink/30">|</span>
+          <span class="hidden sm:inline">Kurzfristige Termine moeglich</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a class="hover:underline" href="tel:+491795214133">Telefon: 0179 5214133</a>
+          <a class="hover:underline" href="mailto:info@umzugshelden-kerem.de">E-Mail: info@umzugshelden-kerem.de</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-paper/85 backdrop-blur border-b border-line">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#top" class="flex items-center gap-2">
+          <div class="h-16 w-16 fullborder border-line overflow-hidden bg-transparent shrink-0">
+            <img src="/assets/img/logo.png" alt="Umzugshelden Kerem Logo" class="h-full w-full object-contain">
+          </div>
+          <div class="leading-tight">
+            <div class="text-sm font-semibold tracking-tight">Umzugshelden</div>
+            <div class="text-[11px] text-muted -mt-0.5">Kerem</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-7 text-sm">
+          <a class="hover:text-ink/70" href="#leistungen">Leistungen</a>
+          <a class="hover:text-ink/70" href="#ablauf">Ablauf</a>
+          <a class="hover:text-ink/70" href="#preise">Preise</a>
+          <a class="hover:text-ink/70" href="#bewertungen">Bewertungen</a>
+          <a class="hover:text-ink/70" href="#kontakt">Kontakt</a>
+          <a
+            href="#angebot"
+            class="inline-flex items-center rounded-full bg-ink px-4 py-2 text-paper shadow-soft hover:opacity-90"
+          >
+            Angebot anfragen
+          </a>
+        </nav>
+
+        <button
+          type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-xl border border-line px-3 py-2"
+          [attr.aria-expanded]="mobileMenuOpen"
+          (click)="toggleMobileMenu()"
+        >
+          <span class="sr-only">Menue</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="text-ink">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden pb-4" [class.hidden]="!mobileMenuOpen">
+        <div class="grid gap-2 text-sm">
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#leistungen">Leistungen</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#ablauf">Ablauf</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#preise">Preise</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#bewertungen">Bewertungen</a>
+          <a class="rounded-xl border border-line px-4 py-3 hover:bg-black/[0.03]" href="#kontakt">Kontakt</a>
+          <a class="rounded-xl bg-ink px-4 py-3 text-paper text-center shadow-soft hover:opacity-90" href="#angebot">
+            Angebot anfragen
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-black/[0.06] blur-3xl"></div>
+        <div class="absolute -bottom-28 -left-24 h-72 w-72 rounded-full bg-black/[0.06] blur-3xl"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div class="grid items-center gap-10 lg:grid-cols-2">
+          <div class="fade-up">
+            <div class="inline-flex items-center gap-2 rounded-full border border-line bg-paper px-3 py-1 text-sm text-ink/80">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+              Schnell. Sorgfaeltig. Transparent.
+            </div>
+
+            <h1 class="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+              Stressfrei umziehen - mit
+              <span class="underline decoration-black/20 underline-offset-8">Umzugshelden</span>.
+            </h1>
+
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                href="#angebot"
+                class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-3 text-paper shadow-soft hover:opacity-90"
+              >
+                Kostenloses Angebot
+              </a>
+              <a
+                href="#leistungen"
+                class="inline-flex items-center justify-center rounded-2xl border border-line bg-paper px-6 py-3 text-ink shadow-soft hover:bg-black/[0.03]"
+              >
+                Leistungen ansehen
+              </a>
+            </div>
+
+            <div class="mt-8 grid grid-cols-2 gap-4 sm:flex sm:flex-wrap stagger">
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-2xl font-semibold">4.9/5</div>
+                <div class="text-sm text-muted">Kundenzufriedenheit</div>
+              </div>
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-2xl font-semibold">24-48h</div>
+                <div class="text-sm text-muted">Rueckmeldung</div>
+              </div>
+            </div>
+          </div>
+          <div class="relative fade-up">
+            <div class="grain relative overflow-hidden rounded-3xl border border-line bg-white shadow-soft">
+              <div class="grid gap-0 sm:grid-cols-2">
+                <div class="p-8">
+                  <img
+                    src="/assets/img/logo.jpeg"
+                    alt="Umzugshelden Kerem"
+                    class="h-16 w-16 rounded-2xl border border-line object-cover"
+                  >
+                  <p class="mt-4 text-sm text-muted">
+                    "Professioneller Umzug - ohne Chaos. Wir arbeiten strukturiert,
+                    vorsichtig und mit klarer Kommunikation."
+                  </p>
+                  <div class="mt-6 rounded-2xl border border-line p-4">
+                    <div class="text-sm font-medium">Typische Einsaetze</div>
+                    <ul class="mt-2 space-y-2 text-sm text-muted">
+                      <li class="flex items-start gap-2">
+                        <span class="mt-1 h-1.5 w-1.5 rounded-full bg-ink/60"></span>
+                        1-4 Zimmer Umzuege
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="mt-1 h-1.5 w-1.5 rounded-full bg-ink/60"></span>
+                        Bueros / Praxen / Lager
+                      </li>
+                      <li class="flex items-start gap-2">
+                        <span class="mt-1 h-1.5 w-1.5 rounded-full bg-ink/60"></span>
+                        Transport &amp; Entsorgung
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="relative min-h-[280px] border-t border-line sm:border-t-0 sm:border-l">
+                  <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,0,0,.06),transparent_60%)]"></div>
+                  <div class="relative flex h-full flex-col justify-between p-8">
+                    <div>
+                      <div class="text-sm font-medium">Sofortkontakt</div>
+                      <div class="mt-2 space-y-2 text-sm text-muted">
+                        <a class="block hover:underline" href="tel:+491795214133">0179 5214133</a>
+                        <a class="block hover:underline" href="mailto:info@umzugshelden-kerem.de">
+                          info@umzugshelden-kerem.de
+                        </a>
+                      </div>
+                    </div>
+                    <div class="rounded-2xl bg-ink p-5 text-paper">
+                      <div class="text-sm font-medium">Tipp</div>
+                      <p class="mt-1 text-sm text-paper/80">
+                        Je mehr Infos (Etage, Aufzug, Haltezone, Moebel), desto
+                        genauer das Angebot.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-3 stagger">
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-sm font-medium">Sicher</div>
+                <div class="mt-1 text-sm text-muted">
+                  Schutzmaterial, Gurte, sauberes Handling
+                </div>
+              </div>
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-sm font-medium">Planbar</div>
+                <div class="mt-1 text-sm text-muted">
+                  Klare Zeiten, klare Absprachen
+                </div>
+              </div>
+              <div class="rounded-2xl border border-line p-4">
+                <div class="text-sm font-medium">Flexibel</div>
+                <div class="mt-1 text-sm text-muted">
+                  Auch kurzfristig, je nach Kapazitaet
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leistungen -->
+    <section id="leistungen" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="text-3xl font-semibold tracking-tight">Leistungen</h2>
+            <p class="mt-2 text-muted">
+              Modular buchbar - von "nur Transport" bis "Komplettumzug".
+            </p>
+          </div>
+          <a
+            href="#angebot"
+            class="inline-flex items-center justify-center rounded-2xl bg-ink px-5 py-3 text-paper shadow-soft hover:opacity-90"
+          >
+            Angebot anfragen
+          </a>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 stagger">
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <div class="flex items-start justify-between gap-4">
+              <h3 class="text-lg font-semibold">Privatumzug</h3>
+              <span class="rounded-full border border-line px-3 py-1 text-xs text-muted">Beliebt</span>
+            </div>
+            <p class="mt-3 text-sm text-muted">
+              Wohnung, Haus, WG - sorgfaeltig tragen, sichern und platzieren.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>&bull; Schutzmaterial &amp; Sicherung</li>
+              <li>&bull; Tragehilfe / Moebel-Handling</li>
+              <li>&bull; Optional: Ein- &amp; Auspacken</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Firmenumzug</h3>
+            <p class="mt-3 text-sm text-muted">
+              Buero, Praxis, Lager - effiziente Umzuege mit minimaler Ausfallzeit.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>&bull; Terminplanung &amp; Etappen</li>
+              <li>&bull; IT/Arbeitsplaetze (nach Absprache)</li>
+              <li>&bull; Wochenende moeglich</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Transport</h3>
+            <p class="mt-3 text-sm text-muted">
+              Einzelstuecke, Moebel, Kleintransporte - schnell und zuverlaessig.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>&bull; Abholung &amp; Lieferung</li>
+              <li>&bull; Tragehilfe</li>
+              <li>&bull; Kurzfristige Termine</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Entsorgung</h3>
+            <p class="mt-3 text-sm text-muted">
+              Keller, Wohnung, Garage - mit klarer Absprache.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>&bull; Vorsortierung nach Wunsch</li>
+              <li>&bull; Entsorgung/Abgabe (nach Absprache)</li>
+              <li>&bull; Besenrein</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Halteverbotszone</h3>
+            <p class="mt-3 text-sm text-muted">
+              Organisation &amp; Hinweise, damit alles reibungslos laeuft.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>&bull; Bedarf klaeren</li>
+              <li>&bull; Empfehlung: fruehzeitig planen</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Winterdienst</h3>
+            <p class="mt-3 text-sm text-muted">
+              Schnee raeumen &amp; Streudienst, damit Wege und Zufahrten sicher bleiben.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>&bull; Raeumen von Gehwegen &amp; Einfahrten</li>
+              <li>&bull; Salz-/Splittstreuung nach Bedarf</li>
+              <li>&bull; Einsatz nach Absprache (einmalig oder regelmaessig)</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-6 shadow-sm hover:shadow-soft transition-shadow">
+            <h3 class="text-lg font-semibold">Einfache Malerarbeiten</h3>
+            <p class="mt-3 text-sm text-muted">
+              Saubere Anstriche fuer Wohnung, Haus oder Buero - schnell und zuverlaessig.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-muted">
+              <li>&bull; Waende &amp; Decken (innen)</li>
+              <li>&bull; Kleinere Ausbesserungen nach Absprache</li>
+              <li>&bull; Material optional inklusive</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ablauf -->
+    <section id="ablauf" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-semibold tracking-tight">So laeuft es ab</h2>
+        <p class="mt-2 text-muted">
+          Vier Schritte - klar, einfach, nachvollziehbar.
+        </p>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-4 stagger">
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 1</div>
+            <div class="mt-2 text-lg font-semibold">Anfrage</div>
+            <p class="mt-2 text-sm text-muted">
+              Kurzformular ausfuellen oder anrufen. Wichtig: Etage, Aufzug, Laufwege.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 2</div>
+            <div class="mt-2 text-lg font-semibold">Angebot</div>
+            <p class="mt-2 text-sm text-muted">
+              Transparente Kalkulation. Optional Besichtigung per Video/Foto.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 3</div>
+            <div class="mt-2 text-lg font-semibold">Umzugstag</div>
+            <p class="mt-2 text-sm text-muted">
+              Sichern, tragen, laden - strukturiert und sorgfaeltig.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-line p-6">
+            <div class="text-sm text-muted">Schritt 4</div>
+            <div class="mt-2 text-lg font-semibold">Ankommen</div>
+            <p class="mt-2 text-sm text-muted">
+              Abladen und platzieren (keine Montage). Abschluss gemeinsam.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 rounded-3xl border border-line p-6 sm:p-8">
+          <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div>
+              <div class="text-lg font-semibold">Checkliste fuer ein genaues Angebot</div>
+              <p class="mt-2 text-sm text-muted">
+                Diese Infos helfen uns, fair und praezise zu kalkulieren.
+              </p>
+            </div>
+            <a
+              href="#angebot"
+              class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-3 text-paper shadow-soft hover:opacity-90"
+            >
+              Jetzt anfragen
+            </a>
+          </div>
+          <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 text-sm text-muted stagger">
+            <div class="rounded-2xl border border-line p-4">
+              Start- &amp; Zieladresse (PLZ)
+            </div>
+            <div class="rounded-2xl border border-line p-4">
+              Etage, Aufzug, Laufwege
+            </div>
+            <div class="rounded-2xl border border-line p-4">
+              Zimmeranzahl / Volumen
+            </div>
+            <div class="rounded-2xl border border-line p-4">
+              Moebel: Schrank/Betten/Kueche
+            </div>
+            <div class="rounded-2xl border border-line p-4">
+              Haltezone / Parkmoeglichkeit
+            </div>
+            <div class="rounded-2xl border border-line p-4">
+              Wunschdatum &amp; Zeitfenster
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preise -->
+    <section id="preise" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 class="text-3xl font-semibold tracking-tight">Preisrahmen</h2>
+            <p class="mt-2 text-muted">
+              Transparente Orientierung. Exakter Preis nach Infos / Besichtigung.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-3 stagger">
+          <article class="rounded-3xl border border-line p-7">
+            <div class="text-sm text-muted">Basis</div>
+            <h3 class="mt-2 text-xl font-semibold">Kleintransport</h3>
+            <p class="mt-2 text-sm text-muted">
+              Fuer einzelne Moebel / kurze Strecken.
+            </p>
+            <div class="mt-6 text-3xl font-semibold">ab 99 EUR</div>
+            <ul class="mt-5 space-y-2 text-sm text-muted">
+              <li>&bull; Abholung &amp; Lieferung</li>
+              <li>&bull; Sichern &amp; Schutzmaterial</li>
+              <li>&bull; 1-2 Helfer (nach Bedarf)</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-ink p-7 shadow-soft">
+            <div class="text-sm text-muted">Empfohlen</div>
+            <h3 class="mt-2 text-xl font-semibold">1-2 Zimmer Umzug</h3>
+            <p class="mt-2 text-sm text-muted">
+              Typischer Wohnungsumzug innerhalb der Region.
+            </p>
+            <div class="mt-6 text-3xl font-semibold">ab 399 EUR</div>
+            <ul class="mt-5 space-y-2 text-sm text-muted">
+              <li>&bull; Tragen, laden, transportieren</li>
+              <li>&bull; Zeitfenster nach Planung</li>
+            </ul>
+          </article>
+
+          <article class="rounded-3xl border border-line p-7">
+            <div class="text-sm text-muted">Individuell</div>
+            <h3 class="mt-2 text-xl font-semibold">Komplettumzug</h3>
+            <p class="mt-2 text-sm text-muted">
+              3+ Zimmer, Haus, Firmen - inkl. Entsorgung moeglich.
+            </p>
+            <div class="mt-6 text-3xl font-semibold">Angebot</div>
+            <ul class="mt-5 space-y-2 text-sm text-muted">
+              <li>&bull; Planung &amp; Teamgroesse</li>
+              <li>&bull; Zusatzleistungen modular</li>
+              <li>&bull; Besichtigung per Foto/Video</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="mt-6 text-sm text-muted">
+          Hinweis: Preise dienen nur als Orientierung. Faktoren wie Etage, Laufwege,
+          Aufzug, Volumen und Zusatzleistungen beeinflussen den Endpreis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Bewertungen -->
+    <section id="bewertungen" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-semibold tracking-tight">Bewertungen</h2>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-3 stagger">
+          <figure class="rounded-3xl border border-line p-7">
+            <blockquote class="text-sm text-muted">
+              "Puenktlich, sehr vorsichtig mit den Moebeln und super freundlich. Umzug
+              war schneller als erwartet."
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium">Kundin, Privatumzug</figcaption>
+          </figure>
+          <figure class="rounded-3xl border border-line p-7">
+            <blockquote class="text-sm text-muted">
+              "Klare Absprachen, keine Ueberraschungen. Buero-Umzug am Wochenende -
+              Montag lief alles wieder."
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium">Kunde, Firmenumzug</figcaption>
+          </figure>
+          <figure class="rounded-3xl border border-line p-7">
+            <blockquote class="text-sm text-muted">
+              "Entsorgung sauber gemacht, Kartons ordentlich abgestellt. Absolut
+              empfehlenswert."
+            </blockquote>
+            <figcaption class="mt-4 text-sm font-medium">Kundin, Entsorgung</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Angebot / Kontakt -->
+    <section id="angebot" class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-start">
+          <div>
+            <h2 class="text-3xl font-semibold tracking-tight">Angebot anfragen</h2>
+            <p class="mt-2 text-muted">
+              Schick uns kurz die wichtigsten Infos - wir melden uns schnell mit
+              einem transparenten Angebot.
+            </p>
+
+            <div class="mt-8 rounded-3xl border border-line p-7">
+              <div class="text-sm font-medium">Direktkontakt</div>
+              <div class="mt-3 space-y-2 text-sm text-muted">
+                <div>
+                  <span class="text-ink">Telefon:</span>
+                  <a class="hover:underline" href="tel:+491795214133">0179 5214133</a>
+                </div>
+                <div>
+                  <span class="text-ink">E-Mail:</span>
+                  <a class="hover:underline" href="mailto:info@umzugshelden-kerem.de">
+                    info@umzugshelden-kerem.de
+                  </a>
+                </div>
+                <div>
+                  <span class="text-ink">Einsatzgebiet:</span> Vaihingen Enz &amp; Umgebung
+                </div>
+              </div>
+              <div class="mt-5 rounded-2xl bg-black/[0.03] p-4 text-sm text-muted">
+                Pro-Tipp: Fotos (Treppenhaus, Moebel, Parkplatzsituation) machen
+                Angebote deutlich genauer.
+              </div>
+            </div>
+          </div>
+
+          <div id="kontakt" class="rounded-3xl border border-line p-7 shadow-soft">
+            <form id="requestForm" class="space-y-4" (submit)="prepareEmail($event)">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium" for="name">Name</label>
+                  <input
+                    class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                    id="name"
+                    name="name"
+                    placeholder="Max Mustermann"
+                    required
+                  >
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="phone">Telefon</label>
+                  <input
+                    class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                    id="phone"
+                    name="phone"
+                    placeholder="0151 1234567"
+                  >
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm font-medium" for="email">E-Mail</label>
+                <input
+                  class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="name@mail.de"
+                  required
+                >
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium" for="from">Von (PLZ/Ort)</label>
+                  <input
+                    class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                    id="from"
+                    name="from"
+                    placeholder="71665 Vaihingen an der Enz"
+                  >
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="to">Nach (PLZ/Ort)</label>
+                  <input
+                    class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                    id="to"
+                    name="to"
+                    placeholder="75428 Illingen"
+                  >
+                </div>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-medium" for="date">Wunschtermin</label>
+                  <input
+                    class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                    id="date"
+                    name="date"
+                    type="date"
+                  >
+                </div>
+                <div>
+                  <label class="text-sm font-medium" for="service">Leistung</label>
+                  <select
+                    class="mt-1 w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                    id="service"
+                    name="service"
+                  >
+                    <option>Privatumzug</option>
+                    <option>Firmenumzug</option>
+                    <option>Transport</option>
+                    <option>Entsorgung</option>
+                    <option>Sonstiges</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="text-sm font-medium" for="details">Details</label>
+                <textarea
+                  class="mt-1 min-h-[120px] w-full rounded-2xl border border-line px-4 py-3 outline-none focus:ring-2 focus:ring-black/10"
+                  id="details"
+                  name="details"
+                  placeholder="Etage, Aufzug, Laufwege, Moebel (z.B. Schrank 2m), Kartons, Haltezone..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <button
+                  class="inline-flex items-center justify-center rounded-2xl bg-ink px-6 py-3 text-paper shadow-soft hover:opacity-90"
+                  type="submit"
+                >
+                  Anfrage vorbereiten
+                </button>
+                <p class="text-xs text-muted">
+                  Hinweis: Das Formular sendet keine Daten automatisch. Es erstellt
+                  eine E-Mail-Vorlage (mailto).
+                </p>
+              </div>
+
+              <div
+                id="formMsg"
+                class="rounded-2xl border border-line bg-black/[0.03] p-4 text-sm text-muted"
+                [class.hidden]="!formMsgVisible"
+              >
+                <div class="font-medium text-ink">Fertig.</div>
+                <div class="mt-1">
+                  Klicke auf den Button, um die E-Mail zu oeffnen. Du kannst den Text vorher pruefen.
+                </div>
+                <a
+                  class="mt-3 inline-flex items-center justify-center rounded-2xl bg-ink px-5 py-3 text-paper shadow-soft hover:opacity-90"
+                  [href]="mailtoLink"
+                >
+                  E-Mail oeffnen
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-line">
+      <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div class="flex items-center gap-3">
+            <img
+              src="/assets/img/logo.jpeg"
+              alt="Logo"
+              class="h-10 w-10 rounded-full border border-line object-cover"
+            >
+            <div>
+              <div class="font-semibold">Umzugshelden Kerem</div>
+              <div class="text-sm text-muted">Umzuege &bull; Transport &bull; Entsorgung</div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-3 text-sm text-muted">
+            <a class="hover:underline" href="#leistungen">Leistungen</a>
+            <span class="text-ink/20">&bull;</span>
+            <a class="hover:underline" href="#ablauf">Ablauf</a>
+            <span class="text-ink/20">&bull;</span>
+            <a class="hover:underline" href="#preise">Preise</a>
+            <span class="text-ink/20">&bull;</span>
+            <a class="hover:underline" href="#kontakt">Kontakt</a>
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-4 text-xs text-muted md:grid-cols-2">
+          <div class="rounded-2xl border border-line p-4">
+            <div class="font-medium text-ink">Impressum</div>
+            <p class="mt-1">
+              Rechtliche Informationen, Kontakt und Verantwortliche
+            </p>
+            <button
+              type="button"
+              class="mt-3 inline-flex items-center justify-center rounded-2xl border border-line px-4 py-2 text-xs text-ink hover:bg-black/[0.03]"
+              (click)="openImpressum()"
+            >
+              Impressum ansehen
+            </button>
+          </div>
+          <div class="rounded-2xl border border-line p-4">
+            <div class="font-medium text-ink">Datenschutz</div>
+            <p class="mt-1">
+              Hinweise zur Datenverarbeitung und Ihren Rechten nach DSGVO.
+            </p>
+            <button
+              type="button"
+              class="mt-3 inline-flex items-center justify-center rounded-2xl border border-line px-4 py-2 text-xs text-ink hover:bg-black/[0.03]"
+              (click)="openDatenschutz()"
+            >
+              Datenschutz ansehen
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-8 text-xs text-muted">
+          &copy; {{ year }} Umzugshelden Kerem. Alle Rechte vorbehalten.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Impressum Modal -->
+  <div
+    id="impressumModal"
+    class="fixed inset-0 z-50 isolate"
+    [class.hidden]="!impressumOpen"
+    [attr.aria-hidden]="!impressumOpen"
+    aria-hidden="true"
+  >
+    <div class="absolute inset-0 z-10 bg-black/50 backdrop-blur-[2px]" (click)="closeImpressum()"></div>
+
+    <div class="relative z-20 mx-auto flex min-h-screen items-center px-4 py-10">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="impressumTitle"
+        class="relative z-30 w-full max-w-3xl rounded-3xl border border-line bg-paper shadow-soft"
+      >
+        <div class="flex items-start justify-between gap-6 border-b border-line px-6 py-5">
+          <div>
+            <div class="text-xs text-muted">Rechtliches</div>
+            <h2 id="impressumTitle" class="text-2xl font-semibold">Impressum</h2>
+          </div>
+
+          <button
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink hover:bg-black/[0.03]"
+            aria-label="Impressum schliessen"
+            (click)="closeImpressum()"
+          >
+            x
+          </button>
+        </div>
+
+        <div class="max-h-[70vh] overflow-y-auto px-6 py-6 text-sm text-muted">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <p class="text-ink font-semibold">Angaben gemaess &sect; 5 TMG</p>
+              <p>
+                <strong class="text-ink">Umzugshelden Kerem</strong><br>
+                Angelstrasse 8<br>
+                71665 Vaihingen an der Enz<br>
+                Deutschland
+              </p>
+              <p>
+                Telefon: <a class="underline" href="tel:+491795214133">0179 5214133</a><br>
+                E-Mail: <a class="underline" href="mailto:info@umzugshelden-kerem.de">info@umzugshelden-kerem.de</a>
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-ink font-semibold">Steuerliche Angaben</p>
+              <ul class="list-disc pl-5 space-y-1">
+                <li><strong class="text-ink">Steuernummer:</strong> ...</li>
+                <li><strong class="text-ink">Umsatzsteuer-ID:</strong> ...</li>
+              </ul>
+            </div>
+
+            <div class="space-y-3">
+              <p class="text-ink font-semibold">Haftung fuer Inhalte</p>
+              <p>
+                Die Inhalte unserer Seiten wurden mit grosster Sorgfalt erstellt.
+                Fuer die Richtigkeit, Vollstaendigkeit und Aktualitaet der Inhalte
+                koennen wir jedoch keine Gewaehr uebernehmen. Als Diensteanbieter
+                sind wir gemaess &sect; 7 Abs. 1 TMG fuer eigene Inhalte auf diesen Seiten
+                nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG
+                sind wir als Diensteanbieter jedoch nicht verpflichtet, uebermittelte
+                oder gespeicherte fremde Informationen zu ueberwachen oder nach Umstaenden
+                zu forschen, die auf eine rechtswidrige Taetigkeit hinweisen. Verpflichtungen
+                zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen
+                Gesetzen bleiben hiervon unberuehrt. Eine Haftung ist erst ab dem Zeitpunkt
+                der Kenntnis einer konkreten Rechtsverletzung moeglich. Bei Bekanntwerden
+                von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+              </p>
+
+              <p class="text-ink font-semibold">Haftung fuer Links</p>
+              <p>
+                Unser Angebot enthaelt Links zu externen Webseiten Dritter, auf deren Inhalte
+                wir keinen Einfluss haben. Deshalb koennen wir fuer diese fremden Inhalte
+                keine Gewaehr uebernehmen. Fuer die Inhalte der verlinkten Seiten ist stets
+                der jeweilige Anbieter oder Betreiber verantwortlich. Die verlinkten Seiten
+                wurden zum Zeitpunkt der Verlinkung auf moegliche Rechtsverstoesse ueberprueft.
+                Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+                Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
+                konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden
+                von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-ink font-semibold">Urheberrecht</p>
+              <p>
+                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
+                unterliegen dem deutschen Urheberrecht. Die Vervielfaeltigung, Bearbeitung,
+                Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechtes
+                beduerfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                Downloads und Kopien dieser Seite sind nur fuer den privaten, nicht kommerziellen
+                Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt
+                wurden, werden die Urheberrechte Dritter beachtet und entsprechende Inhalte als
+                solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung
+                aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden
+                von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-ink font-semibold">Datenschutz</p>
+              <p>
+                Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer
+                Datenschutzerklaerung. Die Datenuebertragung im Internet (z. B. bei der Kommunikation
+                per E-Mail) kann Sicherheitsluecken aufweisen; ein lueckenloser Schutz der Daten
+                vor dem Zugriff durch Dritte ist nicht moeglich.
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-ink font-semibold">Widerspruch gegen Werbe-E-Mails</p>
+              <p>
+                Der Nutzung von im Rahmen der Impressumspflicht veroeffentlichten Kontaktdaten
+                zur Uebersendung von nicht ausdruecklich angeforderter Werbung und Informationsmaterialien
+                wird hiermit widersprochen. Im Falle der unverlangten Zusendung von Werbeinformationen
+                (z. B. Spam-E-Mails) behalten wir uns rechtliche Schritte vor.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 border-t border-line px-6 py-4">
+          <button
+            type="button"
+            class="inline-flex items-center justify-center rounded-2xl bg-ink px-5 py-2.5 text-xs text-paper shadow-soft hover:opacity-90"
+            (click)="closeImpressum()"
+          >
+            Schliessen
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Datenschutz Modal -->
+  <div
+    id="datenschutzModal"
+    class="fixed inset-0 z-50 isolate"
+    [class.hidden]="!datenschutzOpen"
+    [attr.aria-hidden]="!datenschutzOpen"
+    aria-hidden="true"
+  >
+    <div class="absolute inset-0 z-10 bg-black/50 backdrop-blur-[2px]" (click)="closeDatenschutz()"></div>
+
+    <div class="relative z-20 mx-auto flex min-h-screen items-center px-4 py-10">
+      <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="datenschutzTitle"
+        class="relative z-30 w-full max-w-3xl rounded-3xl border border-line bg-paper shadow-soft"
+      >
+        <div class="flex items-start justify-between gap-6 border-b border-line px-6 py-5">
+          <div>
+            <div class="text-xs text-muted">Rechtliches</div>
+            <h2 id="datenschutzTitle" class="text-2xl font-semibold">Datenschutzerklaerung</h2>
+          </div>
+
+          <button
+            type="button"
+            class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink hover:bg-black/[0.03]"
+            aria-label="Datenschutz schliessen"
+            (click)="closeDatenschutz()"
+          >
+            x
+          </button>
+        </div>
+
+        <div class="max-h-[70vh] overflow-y-auto px-6 py-6 text-sm text-muted">
+          <div class="space-y-4">
+            <p class="text-xs text-muted">Stand: 01/2026</p>
+
+            <p>
+              <strong>Umzugshelden Kerem</strong><br>
+              Angelstrasse 8<br>
+              71665 Vaihingen an der Enz<br>
+              Deutschland<br><br>
+              Telefon: <a class="underline" href="tel:+491795214133">0179 5214133</a><br>
+              E-Mail: <a class="underline" href="mailto:info@umzugshelden-kerem.de">info@umzugshelden-kerem.de</a>
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">1. Verantwortlicher</h3>
+            <p>
+              Verantwortlich fuer die Datenverarbeitung auf dieser Website ist
+              Umzugshelden Kerem (Kontaktdaten siehe oben).
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">
+              2. Allgemeine Hinweise zur Datenverarbeitung
+            </h3>
+            <p>
+              Wir verarbeiten personenbezogene Daten nur, soweit dies erforderlich
+              ist, um diese Website bereitzustellen, ihre Sicherheit zu gewaehrleisten
+              und Anfragen zu beantworten. Personenbezogene Daten sind alle Daten,
+              mit denen Sie persoenlich identifiziert werden koennen (z. B. Name,
+              E-Mail-Adresse, IP-Adresse).
+            </p>
+            <p>Rechtsgrundlagen sind insbesondere:</p>
+            <ul class="list-disc pl-5">
+              <li><strong>Art. 6 Abs. 1 lit. f DSGVO</strong> (berechtigtes Interesse)</li>
+              <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> (vorvertragliche Massnahmen)</li>
+            </ul>
+
+            <h3 class="text-base font-semibold text-ink">
+              3. Hosting ueber IONOS und Server-Logfiles
+            </h3>
+            <p>
+              Unsere Website wird bei IONOS gehostet. Beim Aufruf der Website werden
+              aus technischen Gruenden Daten verarbeitet, um die Inhalte auszuliefern
+              sowie Stabilitaet und Sicherheit zu gewaehrleisten (sog. Server-Logfiles).
+            </p>
+            <p>Dabei koennen insbesondere verarbeitet werden:</p>
+            <ul class="list-disc pl-5">
+              <li>IP-Adresse</li>
+              <li>Datum und Uhrzeit des Zugriffs</li>
+              <li>aufgerufene Seite/Datei</li>
+              <li>uebertragene Datenmenge</li>
+              <li>Browsertyp/-version</li>
+              <li>Betriebssystem</li>
+              <li>Referrer-URL</li>
+            </ul>
+            <p>
+              <strong>Zweck:</strong> technischer Betrieb, Fehleranalyse, Schutz vor Missbrauch<br>
+              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">
+              4. Webanalyse mit IONOS WebAnalytics
+            </h3>
+            <p>
+              Wir nutzen IONOS WebAnalytics, um die Nutzung unserer Website statistisch
+              auszuwerten und das Webangebot technisch zu optimieren. IONOS WebAnalytics
+              ermittelt Daten ueber einen Pixel oder ueber Logfiles und verwendet keine Cookies.
+              Die IP-Adresse wird bei einem Seitenaufruf uebertragen, direkt danach anonymisiert
+              und ohne Personenbezug verarbeitet.
+            </p>
+            <p>Typischerweise werden u. a. folgende Daten erhoben:</p>
+            <ul class="list-disc pl-5">
+              <li>Referrer (zuvor besuchte Website)</li>
+              <li>angeforderte Webseite oder Datei</li>
+              <li>Browsertyp und Browserversion</li>
+              <li>verwendetes Betriebssystem</li>
+              <li>verwendeter Geraetetyp</li>
+              <li>Uhrzeit des Zugriffs</li>
+              <li>IP-Adresse in anonymisierter Form</li>
+            </ul>
+            <p>
+              <strong>Zweck:</strong> statistische Auswertung und technische Optimierung<br>
+              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">
+              5. Kontaktaufnahme per E-Mail oder Telefon
+            </h3>
+            <p>
+              Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von
+              Ihnen uebermittelten Daten (z. B. Name, Telefonnummer, E-Mail-Adresse, Inhalt
+              der Nachricht), um Ihr Anliegen zu bearbeiten.
+            </p>
+            <p>
+              Wenn auf der Website ein Kontakt-Button nur eine E-Mail-Vorlage oeffnet
+              (z. B. per <code>mailto:</code>), wird zunaechst Ihr E-Mail-Programm gestartet.
+              Eine Verarbeitung durch uns findet erst statt, wenn Sie die E-Mail tatsaechlich absenden.
+            </p>
+            <p>
+              <strong>Zweck:</strong> Bearbeitung von Anfragen, Kommunikation, Angebotserstellung<br>
+              <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO und/oder Art. 6 Abs. 1 lit. f DSGVO<br>
+              <strong>Speicherdauer:</strong> Wir loeschen Anfragen, sobald sie abgeschlossen bearbeitet sind,
+              sofern keine gesetzlichen Aufbewahrungspflichten bestehen.
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">6. Cookies</h3>
+            <p>
+              Diese Website setzt keine Cookies zu Analyse- oder Marketingzwecken ein.
+              IONOS WebAnalytics nutzt keine Cookies.
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">
+              7. SSL-/TLS-Verschluesselung
+            </h3>
+            <p>
+              Diese Website nutzt eine SSL-/TLS-Verschluesselung (https), damit uebermittelte
+              Inhalte nicht von Dritten mitgelesen werden koennen.
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">8. Ihre Rechte</h3>
+            <p>Sie haben folgende Rechte (jeweils unter den gesetzlichen Voraussetzungen):</p>
+            <ul class="list-disc pl-5">
+              <li>Auskunft (Art. 15 DSGVO)</li>
+              <li>Berichtigung (Art. 16 DSGVO)</li>
+              <li>Loeschung (Art. 17 DSGVO)</li>
+              <li>Einschraenkung der Verarbeitung (Art. 18 DSGVO)</li>
+              <li>Datenuebertragbarkeit (Art. 20 DSGVO)</li>
+              <li>Widerspruch gegen Verarbeitung auf Grundlage berechtigter Interessen (Art. 21 DSGVO)</li>
+              <li>Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO)</li>
+            </ul>
+            <p>
+              Zur Ausuebung Ihrer Rechte genuegt eine E-Mail an:
+              <a class="underline" href="mailto:info@umzugshelden-kerem.de">info@umzugshelden-kerem.de</a>
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">9. Beschwerderecht</h3>
+            <p>
+              Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehoerde zu beschweren (Art. 77 DSGVO).
+            </p>
+
+            <h3 class="text-base font-semibold text-ink">
+              10. Aktualitaet und Aenderungen
+            </h3>
+            <p>
+              Wir passen diese Datenschutzerklaerung an, sobald sich rechtliche Vorgaben
+              oder Funktionen der Website aendern.
+            </p>
+
+            <p class="text-xs text-muted">
+              Hinweis: Diese Datenschutzerklaerung gilt fuer die Website von Umzugshelden Kerem.
+              Wenn zukuenftig zusaetzliche Dienste (z. B. Google Maps, YouTube, Analyse-Tools) eingebunden
+              werden, wird diese Erklaerung entsprechend ergaenzt.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end gap-3 border-t border-line px-6 py-4">
+          <button
+            type="button"
+            class="inline-flex items-center justify-center rounded-2xl bg-ink px-5 py-2.5 text-xs text-paper shadow-soft hover:opacity-90"
+            (click)="closeDatenschutz()"
+          >
+            Schliessen
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Banner -->
+  <div
+    id="cookieBanner"
+    class="fixed inset-0 z-50"
+    [class.hidden]="!cookieVisible"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookieTitle"
+    [attr.aria-hidden]="!cookieVisible"
+  >
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative mx-auto flex min-h-screen w-full items-center px-4 py-10">
+      <div class="mx-auto w-full max-w-xl rounded-3xl border border-line bg-paper p-6 shadow-soft">
+        <div class="flex flex-col gap-5">
+          <div>
+            <div class="mb-3 flex items-center gap-3">
+              <img
+                src="/assets/img/logo.jpeg"
+                alt="Umzugshelden Kerem Logo"
+                class="h-10 w-10 rounded-full border border-line object-cover"
+              >
+              <div class="text-sm font-medium text-ink">Umzugshelden Kerem</div>
+            </div>
+            <div id="cookieTitle" class="text-base font-semibold">Cookie Einstellungen</div>
+            <p class="mt-2 text-sm text-muted">
+              Wir nutzen Cookies, um Ihnen die bestmoegliche Nutzung unserer Webseite zu ermoeglichen
+              und unsere Kommunikation mit Ihnen zu verbessern. Wir beruecksichtigen hierbei Ihre
+              Praeferenzen und verarbeiten Daten fuer Marketing und Statistiken nur, wenn Sie uns
+              Ihre Einwilligung geben. Wenn Sie zu einem spaeteren Zeitpunkt Ihre Meinung aendern,
+              koennen Sie die Einwilligung jederzeit fuer die Zukunft widerrufen.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2 sm:flex-row">
+            <button
+              type="button"
+              class="rounded-2xl border border-line px-4 py-2 text-sm text-ink hover:bg-black/[0.03]"
+              (click)="declineCookies()"
+            >
+              Nur notwendige Cookies
+            </button>
+            <button
+              type="button"
+              class="rounded-2xl bg-ink px-4 py-2 text-sm text-paper shadow-soft hover:opacity-90"
+              (click)="acceptCookies()"
+            >
+              Alle akzeptieren
+            </button>
+          </div>
+          <p class="text-xs text-muted">
+            Details findest du im Bereich Datenschutz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
